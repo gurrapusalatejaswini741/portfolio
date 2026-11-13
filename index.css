@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: #0B0B12; color: #EDEAF5; font-family: "Inter Tight", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+::selection { background: #7C5CFF; color: #fff; }
+:focus-visible { outline: 2px solid #FF8A3D; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
